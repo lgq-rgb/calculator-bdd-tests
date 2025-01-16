@@ -16,4 +16,4 @@ jobs:
       with:
           version: '9.6.0'
           projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Verify Operations" --config -webui.autoUpdateDrivers=true -proxy.auth.option=MANUAL_CONFIG -proxy.auth.server.type=HTTPS -proxy.auth.server.address=testops.staging.katalon.com'
+          args: '-serverUrl="https://admin.staging.katalon.com/" -testOps.serverUrl="https://testops.staging.katalon.com" -noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Verify Operations" -apiKey="a7baee59-d309-4da0-a9a4-87f755d325e1" --config -webui.autoUpdateDrivers=true'
