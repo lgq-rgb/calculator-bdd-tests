@@ -16,4 +16,4 @@ jobs:
       with:
           version: '9.6.0'
           projectPath: '${{ github.workspace }}'
-          args: '-serverUrl="https://admin.staging.katalon.com/" -testOps.serverUrl="https://testops.staging.katalon.com" -noSplash -retry=0 --testSuitePath="Test Suites/Verify Operations" -apiKey="a7baee59-d309-4da0-a9a4-87f755d325e1" --config -webui.autoUpdateDrivers=true'
+          args: '-serverUrl="https://admin.staging.katalon.com/" -testOps.serverUrl="https://testops.staging.katalon.com" -noSplash -retry=0 --testSuitePath="Test Suites/Verify Operations" -browserType="Firefox" -apiKey="a7baee59-d309-4da0-a9a4-87f755d325e1" --config -webui.autoUpdateDrivers=true'
