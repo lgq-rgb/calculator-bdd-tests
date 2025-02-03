@@ -12,7 +12,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: FREE Katalon Studio Github Action
-      uses: depapp/free-katalon-studio-github-actions@v2.8.1
+      uses: depapp/free-katalon-studio-github-actions@v2.8.2
       with:
         testSuitePath: 'Test Suites/Web/TS - Login'
         browserType: 'Chrome'
