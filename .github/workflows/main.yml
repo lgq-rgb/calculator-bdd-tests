@@ -16,5 +16,5 @@ jobs:
       uses: depapp/free-katalon-studio-github-actions@v2.8.4
       with:
         testSuitePath: 'Test Suites/Verify Operations'
-        browserType: 'Chrome'
+        browserType: 'Safari'
         executionProfile: 'default'
