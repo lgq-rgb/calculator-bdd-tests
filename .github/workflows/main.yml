@@ -12,8 +12,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: FREE Katalon Studio Github Action
-      uses: depapp/katalon-studio-free-version@v1.0.0
+      uses: depapp/free-katalon-studio-github-actions@v2.8.0
       with:
-        testSuitePath: 'Test Suites/Verify Operations'
+        testSuitePath: 'Test Suites/Web/TS - Login'
         browserType: 'Chrome'
         executionProfile: 'default'
