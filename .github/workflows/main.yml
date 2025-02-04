@@ -16,5 +16,11 @@ jobs:
       uses: depapp/free-katalon-studio-github-actions@v2.8.4
       with:
         testSuitePath: 'Test Suites/Verify Operations'
-        browserType: 'Safari'
+        browserType: 'Chrome'
         executionProfile: 'default'
+    - name: Build Katalon Reports as Artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: Katalon-Reports
+        path: Reports/
